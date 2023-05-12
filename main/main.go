@@ -2,13 +2,14 @@ package main
 
 import (
 	"os"
-
+	"utils"
 	"github.com/therecipe/qt/widgets"
 )
 
 func main() {
 	app := widgets.NewQApplication(len(os.Args), os.Args)
 
+	SQL_init()
 	widget := widgets.NewQWidget(nil, 0)
 	widget.SetWindowTitle("My Window")
 

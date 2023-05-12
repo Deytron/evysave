@@ -1,1 +1,4 @@
 qtbox
+profiles.json
+*.env
+*.json
