@@ -1,15 +1,16 @@
 package main
 
 import (
-	"os"
 	u "evysave/utils"
+	"os"
+
 	"github.com/therecipe/qt/widgets"
 )
 
 func main() {
 	app := widgets.NewQApplication(len(os.Args), os.Args)
 
-	u.SQL_init()
+	u.Prod_check()
 	widget := widgets.NewQWidget(nil, 0)
 	widget.SetWindowTitle("My Window")
 
